@@ -21,7 +21,7 @@ a:visited {
   width: 100%;
 }
 .page-header{
-  background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)),url('img/carousel-2.webp') no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.6)),url('img/carousel-2.jpg') no-repeat center center;
   
 }
 .navbar-nav a{
@@ -30,8 +30,8 @@ padding: 10px 30px;
 margin: 0px 20px;
 color: white;
 }
-.nav-link:hover{
-color: #f5472a;
+.nav-link:hover, .link:hover{
+color: #f5472a!important;
 }
 .active{
 color: #f5472a!important;
@@ -67,6 +67,7 @@ font-weight: bold!important;
   left: 0;
   right: 0;
 }
+
 
 
 .three-icon-box {
@@ -489,6 +490,26 @@ font-weight: bold!important;
 
 .contact-page__social a+a {
   margin-left: 10px;
+}
+
+.place-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.place-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background: gray;
+  transition: .5s;
+}
+
+.place-carousel .owl-dot.active {
+  width: 40px;
+  background: #f5472a;
 }
 
 .page {
@@ -948,6 +969,7 @@ font-weight: bold!important;
   .about-us-page .team_item .position {
     font-size: 19px;
   }
+ 
 }
 @media screen and (max-width: 1040px) {
   .about-us-page .team_item .image .socials .links {
