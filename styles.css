@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Tapestry&display=swap');
+
+
 body{
   padding: 0;
   margin: 0;
   background-color: #f8f3f2;
   font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.8px;
 }
 
 a {
@@ -46,8 +51,9 @@ letter-spacing: 2px;
   height: 90vh;
 }
 .text-primary{
-font-family: 'Dancing Script', cursive;
+font-family: 'Tapestry', cursive;
 font-weight: bold!important;
+color: #f5472a!important;
 }
 /* #fa6741 */
 
@@ -695,35 +701,8 @@ font-weight: bold!important;
   position: relative;
   transition: all .2s linear;
 }
-.about-us-page .team .arrows .arrow:before {
-  width: 16px;
-  height: 12px;
-  background: url(../img/left-arrow.svg) center center no-repeat;
-  background-size: contain;
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  margin-top: -6px;
-  margin-left: -8px;
-  opacity: 1;
-  transition: all .2s linear;
-}
-.about-us-page .team .arrows .arrow:after {
-  width: 16px;
-  height: 12px;
-  background: url(../img/right-arrow.svg) center center no-repeat;
-  background-size: contain;
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 50%;
-  margin-top: -6px;
-  margin-left: -8px;
-  opacity: 0;
-  transition: all .2s linear;
-  transform: rotate(180deg);
-}
+
+
 .about-us-page .team .arrows .arrow.next {
   margin-left: 18px;
   transform: rotate(180deg);
@@ -936,6 +915,16 @@ font-weight: bold!important;
   height: 100%;
   object-position: center;
 }
+
+.dest img{
+  filter: brightness(40%);
+}
+ .card-text{
+  display: none;
+}
+.dest:hover .card-text{
+  display: block;
+}
 /*----------------------------------------------------------------------------------
 2. Media queries
 -----------------------------------------------------------------------------------*/
@@ -955,6 +944,10 @@ font-weight: bold!important;
   .about-us-page .team_item .image {
     height: 376px;
   }
+  
+}
+@media screen and (max-width: 1400px){
+ 
 }
 @media screen and (max-width: 1200px) {
   .about-us-page .statistics_item {
@@ -969,7 +962,7 @@ font-weight: bold!important;
   .about-us-page .team_item .position {
     font-size: 19px;
   }
- 
+  
 }
 @media screen and (max-width: 1040px) {
   .about-us-page .team_item .image .socials .links {
@@ -1003,6 +996,8 @@ font-weight: bold!important;
   .mobile .about-us-page .team .arrows {
     display: none;
   }
+  
+ 
 }
 @media screen and (max-width: 1000px) {
   .about-us-page .statistics_item ._text {
@@ -1064,6 +1059,7 @@ font-weight: bold!important;
   .about-us-page .team_item .image:before {
     display: none;
   }
+ 
 }
 @media screen and (max-width: 760px) {
   .about-us-page .description {
@@ -1089,6 +1085,8 @@ font-weight: bold!important;
   .about-us-page .team .arrows {
     display: none;
   }
+  
+  
 }
 @media screen and (max-width: 640px) {
   .about-us-page .description {
@@ -1098,6 +1096,7 @@ font-weight: bold!important;
     right: 15px;
     top: 15px;
   }
+  
 }
 @media screen and (max-width: 360px) {
   .about-us-page .team_item {
@@ -1179,6 +1178,11 @@ font-weight: bold!important;
     flex-direction: row;
     justify-content: space-between;
   }
+  .destinations .section_content .scroll .destinations_item {
+    width: 270px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1198,3 +1202,4 @@ font-weight: bold!important;
   }
 
 }
+
