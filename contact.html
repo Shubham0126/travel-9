@@ -42,6 +42,83 @@
         </div>
     </div>
 </nav>
+
+<!-- Popup Start -->
+ 
+<div class="modal-overlay"></div>
+<div class="modall">
+  
+  <div class="close-btn">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+
+  <div class="left">
+    <div class="discount-text">
+      <h3>Special</h3>
+      <h3 class="sale-text">Sale</h3>
+    </div>
+
+    <div class="discount">
+      <p>Save up to</p>
+      <div class="discount-percent">45%</div>
+    </div>
+  </div>
+
+  <div class="right">
+    <h2>
+      Call Directly for <br />
+      best Experience on Vacation
+    </h2>
+    <p>+1-234-567</p>
+    <a href="tel:1-111-11-111" class="discount-btn"><i class="fa fa-phone-alt me-1"></i>Call Now</a>
+  </div>
+</div>
+
+   <!-- Popup End -->
+
+<!-- contact Popup -->
+<div id="popup-reg" class="popup">
+    <div class="popup-content">
+      <div class="event-header">
+        <h6>Don't be shy, Contact Us</h6>
+      </div>
+        <form id="send" class="send-form">
+          <div class="form-group">
+            <label for="name">
+                <i class="fa fa-user"></i>
+              </label>
+            <input type="text" placeholder="Enter name..." id="name" name="name" required="required">
+            
+          </div>
+          <div class="form-group">
+            <label for="phone">
+                <i class="fa fa-phone"></i>
+              </label>
+            <input type="tel" placeholder="Enter phone..." id="phone" name="phone" required="required">
+            
+          </div>
+          <div class="form-group">
+            <label for="mail">
+                <i class="fa fa-envelope"></i>
+              </label>
+            <input type="email" placeholder="Enter mail..." id="mail" name="mail" required="required">
+           
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Enter message..." name="text" id="text"></textarea>
+            <label for="text" class="txt">
+              <i class="fa fa-commenting"></i>
+            </label>
+          </div>
+          <button type="submit" class="main-btn-rect" name="text" value="Send">
+            <i class="fa fa-paper-plane"></i>Send</button>
+        </form>
+      <span class="fade-out main-btn-circle">╳</span>
+    </div>
+  </div>
+
+  <!-- Contact Popup end -->
+
 <div class="container-fluid page-header">
     <div class="container">
         <div class="d-flex flex-column align-items-center justify-content-center text-uppercase text-white" style="height: 550px;">
@@ -96,7 +173,7 @@
 </div>
 <div class="container my-5">
     <div class="row text-center">
-        <button class="btn thm-btn js-popup-open py-3" data-href="#contact-us"><span class="fw-bold fs-6">Contact Us</span></button>
+        <button type="button" class="thm-btn btn con-btn" data-popup="popup-reg">Contact Us</button>
     </div>
 </div>
 
@@ -163,7 +240,7 @@
     </div>
   </div>
   <!-- Footer End -->
-   
+ 
     
         <!-- bootstrap & Jquery js -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
